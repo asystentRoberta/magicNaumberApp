@@ -14,5 +14,7 @@ public class Main {
             System.out.println("Please use as argument exactly one file");
             System.exit(0);
         }
+        MainApp mainApp = new MainApp();
+        mainApp.printResultOfTestingFile(fileToServe);
     }
 }
