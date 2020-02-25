@@ -10,6 +10,8 @@ class FileTesterFactory {
 
     static {
         extensionsMap.put("gif", new GifTester());
+        extensionsMap.put("jpg", new JpgTester());
+        extensionsMap.put("txt", new TxtTester());
     }
 
     static Optional<FileTesterInterface> whatExtensionToTest(String extensionOfFile) {
