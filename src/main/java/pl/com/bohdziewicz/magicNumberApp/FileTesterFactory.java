@@ -6,7 +6,7 @@ import java.util.Optional;
 
 class FileTesterFactory {
 
-    private static Map<String, FileTesterInterface> extensionsMap = new HashMap<>();
+    static Map<String, FileTesterInterface> extensionsMap = new HashMap<>();
 
     static {
         extensionsMap.put("gif", new GifTester());
