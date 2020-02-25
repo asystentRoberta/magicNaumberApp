@@ -15,7 +15,6 @@ class MainApp {
             System.out.println("My algorithm says that the file has correct extension");
         } else {
             System.out.println("My algorithm says that the file has not correct extensions");
-            System.out.println("But wait...");
             whatKindOfFileFinder.infoAboutFile(fileToServe);
         }
     }

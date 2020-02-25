@@ -12,11 +12,13 @@ public class WhatKindOfFileFinder {
 
             FileTesterInterface fileTesterInterface = (FileTesterInterface) ((Map.Entry) extensionsMap).getValue();
             boolean isFileHasCorrectExtension = fileTesterInterface.isFileHasCorrectExtension(fileToServe);
-            System.out.println(
-                    "Tested: "
-                            + ((Map.Entry) extensionsMap).getKey()
-                            + " and result was: "
-                            + isFileHasCorrectExtension);
+            if (isFileHasCorrectExtension) {
+                System.out.println("Extension is "
+                        + fileToServe.getExtensionOfFile()
+                        + ", while actually it's a "
+                        + ((Map.Entry) extensionsMap).getKey()
+                        + ".");
+            }
         }
     }
 }
