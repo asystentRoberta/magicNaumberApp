@@ -9,7 +9,7 @@ public class FileToServe {
     private String fileName;
     private String extensionOfFile;
 
-    FileToServe(File file) {
+    public FileToServe(File file) {
 
         this.file = file;
     }
