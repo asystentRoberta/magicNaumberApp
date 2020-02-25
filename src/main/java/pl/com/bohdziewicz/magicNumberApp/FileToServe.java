@@ -24,4 +24,9 @@ class FileToServe {
 
         return (int) file.length();
     }
+
+    File getFile() {
+
+        return file;
+    }
 }
