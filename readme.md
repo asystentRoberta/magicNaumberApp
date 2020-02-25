@@ -1,3 +1,14 @@
+---
+Time's up. In my opinion, I did a lot of work (thanks to the notes I made yesterday), but there is still a lot to do:
+- error handling
+- nicer interface
+- meaningful messages
+- TESTS!
+(I was running some tests on my side - hence the idea for additional functionality in the form of reading
+ files from the folder).
+ Last commit straight to the master.
+ ---
+
 Status after last push (github actions):
 
 [![Actions Status](https://github.com/asystentRoberta/magicNaumberApp/workflows/gradleBuildTest/badge.svg)](https://github.com/asystentRoberta/magicNumberApp/actions)
