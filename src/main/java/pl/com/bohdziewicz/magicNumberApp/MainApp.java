@@ -12,9 +12,9 @@ class MainApp {
         final boolean isFileHasCorrectExtension = fileTester.isFileHasCorrectExtension(fileToServe);
 
         if (isFileHasCorrectExtension) {
-            System.out.println("My algorithm says that the file has correct extension");
+            System.out.println("My algorithm said that the file has correct extension");
         } else {
-            System.out.println("My algorithm says that the file has not correct extensions");
+            System.out.println("My algorithm said that the file has not correct extensions");
             whatKindOfFileFinder.infoAboutFile(fileToServe);
         }
     }
