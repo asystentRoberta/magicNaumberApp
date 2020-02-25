@@ -5,7 +5,7 @@ import java.nio.file.Files;
 
 public class FileBytesReader {
 
-    private byte[] readAllBytesFromFile(FileToServe fileToServe) {
+    byte[] readAllBytesFromFile(FileToServe fileToServe) {
 
         try {
             return Files.readAllBytes(fileToServe.getFile().toPath());
