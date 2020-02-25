@@ -1,11 +1,13 @@
-package pl.com.bohdziewicz.magicNumberApp;
+package pl.com.bohdziewicz.magicNumberApp.readers;
 
 import java.io.IOException;
 import java.nio.file.Files;
 
+import pl.com.bohdziewicz.magicNumberApp.FileToServe;
+
 public class FileBytesReader {
 
-    byte[] readAllBytesFromFile(FileToServe fileToServe) {
+    public byte[] readAllBytesFromFile(FileToServe fileToServe) {
 
         try {
             return Files.readAllBytes(fileToServe.getFile().toPath());
@@ -15,7 +17,7 @@ public class FileBytesReader {
         return new byte[0];
     }
 
-    byte[] readNFirstBytesFromFile(FileToServe fileToServe, int nBytesToRead) {
+    public byte[] readNFirstBytesFromFile(FileToServe fileToServe, int nBytesToRead) {
 
         byte[] allBytesFile = readAllBytesFromFile(fileToServe);
         byte[] nBytesToReturn = new byte[nBytesToRead];

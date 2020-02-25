@@ -1,13 +1,15 @@
-package pl.com.bohdziewicz.magicNumberApp;
+package pl.com.bohdziewicz.magicNumberApp.testers;
 
 import java.util.Arrays;
 
-public class JpgTester implements FileTesterInterface{
+import pl.com.bohdziewicz.magicNumberApp.FileToServe;
+import pl.com.bohdziewicz.magicNumberApp.readers.FileBytesReader;
 
-    private static final byte[] jpgFirstFourBytesFirstSignature = {-1,-40,-1,-40};
-    private static final byte[] jpgFirstFourBytesSecondSignature = {-1, -40, -1, -18};
-    private static final byte[] jpgFirstTwelveBytesThirdSignature = {-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1};
+public class JpgTester implements FileTesterInterface {
 
+    private static final byte[] jpgFirstFourBytesFirstSignature = { -1, -40, -1, -40 };
+    private static final byte[] jpgFirstFourBytesSecondSignature = { -1, -40, -1, -18 };
+    private static final byte[] jpgFirstTwelveBytesThirdSignature = { -1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1 };
 
     @Override public boolean isFileHasCorrectExtension(FileToServe fileToServe) {
 

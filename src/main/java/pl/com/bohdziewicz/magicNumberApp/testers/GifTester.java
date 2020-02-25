@@ -1,6 +1,9 @@
-package pl.com.bohdziewicz.magicNumberApp;
+package pl.com.bohdziewicz.magicNumberApp.testers;
 
 import java.util.Arrays;
+
+import pl.com.bohdziewicz.magicNumberApp.FileToServe;
+import pl.com.bohdziewicz.magicNumberApp.readers.FileBytesReader;
 
 public class GifTester implements FileTesterInterface {
 
