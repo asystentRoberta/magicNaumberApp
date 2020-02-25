@@ -1,10 +1,12 @@
-package pl.com.bohdziewicz.magicNumberApp;
+package pl.com.bohdziewicz.magicNumberApp.testers;
 
 import java.util.Map;
 
-class WhatKindOfFileFinder {
+import pl.com.bohdziewicz.magicNumberApp.FileToServe;
 
-    void infoAboutFile(FileToServe fileToServe) {
+public class WhatKindOfFileFinder {
+
+    public void infoAboutFile(FileToServe fileToServe) {
 
         for (Map.Entry<String, FileTesterInterface> extensionsMap : FileTesterFactory.extensionsMap.entrySet()) {
 

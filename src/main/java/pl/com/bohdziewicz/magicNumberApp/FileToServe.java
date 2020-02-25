@@ -2,7 +2,7 @@ package pl.com.bohdziewicz.magicNumberApp;
 
 import java.io.File;
 
-class FileToServe {
+public class FileToServe {
 
     private File file;
     private int sizeInBytes;
@@ -14,7 +14,7 @@ class FileToServe {
         this.file = file;
     }
 
-    String getExtensionOfFile() {
+    public String getExtensionOfFile() {
 
         fileName = file.getName();
         return fileName.substring(fileName.length() - 3).toLowerCase();
@@ -25,7 +25,7 @@ class FileToServe {
         return (int) file.length();
     }
 
-    File getFile() {
+    public File getFile() {
 
         return file;
     }

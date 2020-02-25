@@ -1,4 +1,4 @@
-package pl.com.bohdziewicz.magicNumberApp;
+package pl.com.bohdziewicz.magicNumberApp.testers;
 
 import java.util.HashMap;
 import java.util.Map;

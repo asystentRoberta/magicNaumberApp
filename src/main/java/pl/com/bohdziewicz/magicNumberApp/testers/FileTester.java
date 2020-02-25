@@ -1,8 +1,10 @@
-package pl.com.bohdziewicz.magicNumberApp;
+package pl.com.bohdziewicz.magicNumberApp.testers;
+
+import pl.com.bohdziewicz.magicNumberApp.FileToServe;
 
 public class FileTester {
 
-    boolean isFileHasCorrectExtension(FileToServe fileToServe) {
+    public boolean isFileHasCorrectExtension(FileToServe fileToServe) {
 
         FileTesterInterface testedFile =
                 FileTesterFactory.whatExtensionToTest(fileToServe.getExtensionOfFile()).orElseThrow(

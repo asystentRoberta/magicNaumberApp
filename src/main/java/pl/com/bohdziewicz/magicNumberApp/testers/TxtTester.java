@@ -1,9 +1,12 @@
-package pl.com.bohdziewicz.magicNumberApp;
+package pl.com.bohdziewicz.magicNumberApp.testers;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.CharacterCodingException;
 import java.nio.charset.CharsetDecoder;
 import java.nio.charset.StandardCharsets;
+
+import pl.com.bohdziewicz.magicNumberApp.FileToServe;
+import pl.com.bohdziewicz.magicNumberApp.readers.FileBytesReader;
 
 public class TxtTester implements FileTesterInterface {
 
