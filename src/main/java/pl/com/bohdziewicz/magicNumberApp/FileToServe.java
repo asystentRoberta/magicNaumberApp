@@ -17,7 +17,7 @@ class FileToServe {
     String getExtensionOfFile() {
 
         fileName = file.getName();
-        return fileName.substring(fileName.length() - 3);
+        return fileName.substring(fileName.length() - 3).toLowerCase();
     }
 
     int getSizeInBytes() {
