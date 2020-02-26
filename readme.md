@@ -1,12 +1,10 @@
----
-Time's up. In my opinion, I did a lot of work (thanks to the notes I made yesterday), but there is still a lot to do:
-- error handling
-- nicer interface
-- meaningful messages
-- TESTS!
-(I was running some tests on my side - hence the idea for additional functionality in the form of reading
- files from the folder).
- Last commit straight to the master.
+Ok. Lets improve this little project. 
+It was project in the recruitment process.  Now it's time to develop it.
+###### _
+
+* [Project description](#Magic-numbers)
+* [How to use program](#Usage)
+* [Update-1 - new functionality](#Update-1-New-functionality)
  ---
 
 Status after last push (github actions):
@@ -25,6 +23,9 @@ At the moment it supports:
 * jpg files 
 * gif files 
 
+[Back up](#_)
+
+##### Usage
 If you want to use the application, follow these steps:
 
 ```batch
@@ -41,10 +42,11 @@ java -jar magicNumberApp-0.1.jar fileToTest
 where  _**fileToTest**_  is the file you want to test (file has to be in _/build/libs/_  folder) or path to file (for
  example _/home/user/text.txt_  or _C:\Users\\%USERNAME%\Documents\text.txt_)
  
+ [Back up](#_)
  
  ---
  
- ### Update-1 New functionality:
+ ### Update-1 New functionality
  You can use "magic" argument "sourceFolder" when you call magicNumberApp.
  Then my application scan folder _files_ **(it has to exist)** in _/src/main/resources_ and print info about each
   file in this folder.
@@ -85,15 +87,4 @@ First six bytes of this file:
 47 49 46 38 39 61 
 Extension is gif, while actually it's a gif.
 ```  
- 
- 
- #### This is a test of my skills. I only have two hours to write the program..
- 
- **_The clock has started ticking..._**
- 
- and it ticking fast.
- 
-  <img src="http://bohdziewicz.com.pl/images_share/tickingClock.gif" width="100" height="100" />
-
-#### Update-2 info: 
-I have 15 minutes left - not enough to write the tests...
+[Back up](#_)
