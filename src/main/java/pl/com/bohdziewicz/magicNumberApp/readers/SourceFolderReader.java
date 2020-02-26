@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class SourceFolderReader {
 
-    private FilesByteReader filesByteReader = new FilesByteReader();
+    private final FilesByteReader filesByteReader = new FilesByteReader();
 
     public void infoAboutFiles() {
 

@@ -12,9 +12,7 @@ Consider:
 
 public class FileToServe {
 
-    private File file;
-    private int sizeInBytes;
-    private String extensionOfFile;
+    private final File file;
 
     public FileToServe(File file) {
 
