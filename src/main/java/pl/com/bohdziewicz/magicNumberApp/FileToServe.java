@@ -2,11 +2,18 @@ package pl.com.bohdziewicz.magicNumberApp;
 
 import java.io.File;
 
+/*
+Commentary for educational purposes
+Consider:
++ delete this class and use File instead
++ extends File
+
+ */
+
 public class FileToServe {
 
     private File file;
     private int sizeInBytes;
-    private String fileName;
     private String extensionOfFile;
 
     public FileToServe(File file) {
@@ -16,11 +23,11 @@ public class FileToServe {
 
     public String getExtensionOfFile() {
 
-        fileName = file.getName();
+        String fileName = file.getName();
         return fileName.substring(fileName.length() - 3).toLowerCase();
     }
 
-    int getSizeInBytes() {
+    private int getSizeInBytes() {
 
         return (int) file.length();
     }
@@ -28,5 +35,10 @@ public class FileToServe {
     public File getFile() {
 
         return file;
+    }
+
+    boolean isItSafeToServeThisFile() {
+
+        return getSizeInBytes() <= 3932160;  //3932160 bytes => 30MB
     }
 }

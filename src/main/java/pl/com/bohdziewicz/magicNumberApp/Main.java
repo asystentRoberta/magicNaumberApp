@@ -23,7 +23,7 @@ public class Main {
         } else {
 
             MainApp mainApp = new MainApp();
-            mainApp.printResultOfTestingFile(fileToServe);
+            mainApp.runApp(fileToServe);
         }
     }
 }
