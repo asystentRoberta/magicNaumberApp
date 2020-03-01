@@ -39,4 +39,12 @@ public class FileToServe {
 
         return getSizeInBytes() <= 3932160;  //3932160 bytes => 30MB
     }
+
+    public boolean isItFile() {
+
+        if (file != null) {
+            return file.isFile();
+        }
+        return false;
+    }
 }

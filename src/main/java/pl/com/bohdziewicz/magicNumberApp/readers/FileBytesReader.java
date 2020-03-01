@@ -9,10 +9,13 @@ public class FileBytesReader {
 
     public byte[] readAllBytesFromFile(FileToServe fileToServe) {
 
-        try {
-            return Files.readAllBytes(fileToServe.getFile().toPath());
-        } catch (IOException ex) {
-            ex.printStackTrace();
+        if (fileToServe!=null && fileToServe.isItFile()) {
+            try {
+                return Files.readAllBytes(fileToServe.getFile().toPath());
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+            return new byte[0];
         }
         return new byte[0];
     }
