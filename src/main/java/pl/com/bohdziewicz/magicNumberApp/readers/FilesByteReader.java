@@ -13,7 +13,7 @@ class FilesByteReader {
 
         WhatKindOfFileFinder whatKindOfFileFinder = new WhatKindOfFileFinder();
         FileListFromResourcesFolder fileListFromResourcesFolder = new FileListFromResourcesFolder();
-        File[] allFilesFromResourcesFolder = fileListFromResourcesFolder.getResourcesFolderFiles();
+        File[] allFilesFromResourcesFolder = fileListFromResourcesFolder.getResourcesFolderFiles("files");
 
         for (File file : allFilesFromResourcesFolder) {
             System.out.println("Ok - lets see at " + file.getName() + " :");
