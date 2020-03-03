@@ -2,6 +2,7 @@ package pl.com.bohdziewicz.magicNumberApp.readers;
 
 import java.io.File;
 import java.nio.file.InvalidPathException;
+import java.util.Arrays;
 
 import org.junit.Test;
 
@@ -15,6 +16,7 @@ public class FileListFromResourcesFolderTest {
         FileListFromResourcesFolder fileListFromResourcesFolder = new FileListFromResourcesFolder();
         final File[] resourcesFolderFiles = fileListFromResourcesFolder.getResourcesFolderFiles("files");
         assertEquals(3, resourcesFolderFiles.length);
+        Arrays.sort(resourcesFolderFiles);
         assertEquals("a.txt", resourcesFolderFiles[0].getName());
         assertEquals("b.txt", resourcesFolderFiles[1].getName());
         assertEquals("c.txt", resourcesFolderFiles[2].getName());
