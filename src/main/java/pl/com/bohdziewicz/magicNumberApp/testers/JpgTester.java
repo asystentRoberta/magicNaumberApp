@@ -10,10 +10,10 @@ public class JpgTester implements FileTesterInterface {
     private static final byte[] jpgFirstFourBytesFirstSignature = { -1, -40, -1, -40 };
     private static final byte[] jpgFirstFourBytesSecondSignature = { -1, -40, -1, -18 };
     private static final byte[] jpgFirstTwelveBytesThirdSignature = { -1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1 };
+    private FileBytesReader fileBytesReader = new FileBytesReader();
 
     @Override public boolean isFileHasCorrectExtension(FileToServe fileToServe) {
 
-        FileBytesReader fileBytesReader = new FileBytesReader();
         final byte[] fourFirstBytesFromFile = fileBytesReader.readNFirstBytesFromFile(fileToServe, 4);
         final byte[] twelveFirstBytesFromFile = fileBytesReader.readNFirstBytesFromFile(fileToServe, 12);
 
